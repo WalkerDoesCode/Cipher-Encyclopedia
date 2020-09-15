@@ -42,12 +42,15 @@ function decryptCaesar(cipherText, key) {
     var text = "";
     var character = 0;
     var newAscii = 0;
+    var v;
     for(i = 0; i<cipherText.length; i++) {
         character = cipherText.charCodeAt(i);
         if(65<=character && character<=90) {
-            newAscii = (character-key+39)%26 + 65;
+            v = modGreater(character,65+key,26);
+            newAscii = v + 65;
         } else if(97<=character && character<=122) {
-            newAscii = (character-key+33)%26 + 97;
+            v = modGreater(character,97+key,26);
+            newAscii = v + 97;
         } else {
             return "6597 ERROR";
         }

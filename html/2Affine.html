@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/2Affine.css" type="text/css">
+        <title>Cipher 2: Affine</title>
+    </head>
+    <body> 
+        <p>
+            Cipher #2: Affine Cipher <br>
+            The affine is a type of monoalphabetic substitution cipher, where each letter in an alphabet is mapped
+            to its numeric equivalent, encrypted using a simple mathematical function, and converted back to a letter. 
+            The formula used means that each letter encrypts to one other letter, and back again, meaning the cipher 
+            is essentially a standard substitution cipher with a rule governing which letter goes to which. As such, 
+            it has the weaknesses of all substitution ciphers. Each letter is enciphered with the function (ax + b) 
+            mod 26, where b is the magnitude of the shift. (Wikipedia)
+        </p>
+        <p>
+            Enter the text that you wish to perform the Affine Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "apple"><br>
+            Encryption Key (Multiplier "a"): <input id = "cipherMultiply" type = "text" name = "multiply" value = "1"><br>
+            Encryption Key (Shifter "b"): <input id = "cipherShift" type = "text" name = "shift" value = "1"><br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myAffineCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/2Affine.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -93,3 +93,29 @@ function modInv(a, mod) {
     t = totient(mod);
     return modPower(a, t-1, mod);
 }
+
+// invertString returns the inverse of the English text in a string (maintaining case sensitivity)
+// This is made specifically for the vigenere cipher where a = 0, b = 1, c = 2, ... z = -1, y = -2, etc.
+// For example, invertString("kEz") = "qWb"
+function invertString(myString) {
+    var text = "";
+    for(var i = 0; i<myString.length; i++) {
+        character = myString.charCodeAt(i);
+        if(65<=character && character<=90) {
+            if(character!=65) {
+                text += String.fromCharCode(156-character);
+            } else {
+                text+= String.fromCharCode(65);
+            }
+        } else if(97<=character && character<=122) {
+            if(character!=97) {
+                text += String.fromCharCode(220-character);
+            } else {
+                text+= String.fromCharCode(97);
+            }
+        } else {
+            return -1;
+        }
+    }
+    return text;
+}

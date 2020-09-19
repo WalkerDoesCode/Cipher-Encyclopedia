@@ -119,3 +119,25 @@ function invertString(myString) {
     }
     return text;
 }
+
+// stringInsert inserts string v at index i in myString.
+// For example, stringInsert("apple", 2, " bob ") returns "ap bob ple"
+function stringInsert(myString, i, v) {
+    return myString.substring(0,i) + v + myString.substring(i);
+}
+
+// inRange returns true only if a value falls within a closed range(low,high)
+function inRange(value, low,high) {
+    return !(value<low || value>high);
+}
+
+// inRangeList checks a list and returns true only if all values in the list fall
+// within a closed range [low,high].
+function inRangeList(list,low,high) {
+    for(var i = 0; i<list.length; i++) {
+        if(list[i]<low || list[i]>high) {
+            return false;
+        }
+    }
+    return true;
+}

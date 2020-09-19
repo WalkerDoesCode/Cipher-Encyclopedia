@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/5Playfair.css" type="text/css">
+        <title>Cipher 5: Playfair</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #5: Playfair Cipher <br>
+            The Playfair cipher uses a 5 by 5 table containing a key word or phrase. Memorization of the 
+            keyword and 4 simple rules was all that was required to create the 5 by 5 table and use the cipher.
+            To generate the key table, one would first fill in the spaces in the table (a modified Polybius 
+            square) with the letters of the keyword (dropping any duplicate letters), then fill the remaining 
+            spaces with the rest of the letters of the alphabet in order (usually omitting "J" or "Q" to reduce 
+            the alphabet to fit; other versions put both "I" and "J" in the same space). The key can be written 
+            in the top rows of the table, from left to right, or in some other pattern, such as a spiral beginning 
+            in the upper-left-hand corner and ending in the center. The keyword together with the conventions 
+            for filling in the 5 by 5 table constitute the cipher key. To encrypt a message, one would break 
+            the message into digrams (groups of 2 letters) such that, for example, "HelloWorld" becomes 
+            "HE LL OW OR LD". These digrams will be substituted using the key table. Since encryption 
+            requires pairs of letters, messages with an odd number of characters usually append an uncommon letter, 
+            such as "X", to complete the final digram. The two letters of the digram are considered opposite corners 
+            of a rectangle in the key table. To perform the substitution, apply the following 4 rules, in order, to 
+            each pair of letters in the plaintext: <br><br>
+            1. If both letters are the same (or only one letter is left), add an "X" after the first letter. Encrypt 
+            the new pair and continue. Some variants of Playfair use "Q" instead of "X", but any letter, itself uncommon 
+            as a repeated pair, will do. <br><br>
+            2. If the letters appear on the same row of your table, replace them with the letters to their immediate 
+            right respectively (wrapping around to the left side of the row if a letter in the original pair was on 
+            the right side of the row). <br><br>
+            3. If the letters appear on the same column of your table, replace them with the letters immediately below 
+            respectively (wrapping around to the top side of the column if a letter in the original pair was on the bottom 
+            side of the column).<br><br>
+            4. If the letters are not on the same row or column, replace them with the letters on the same row respectively 
+            but at the other pair of corners of the rectangle defined by the original pair. The order is important – the 
+            first letter of the encrypted pair is the one that lies on the same row as the first letter of the plaintext 
+            pair. <br> <br>
+            (Wikipedia)
+        </p>
+        <p>
+            Enter the text that you wish to perform the Caesar Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "apple"><br>
+            Encryption Key: <input id = "cipherKey" type = "text" name = "key" value = "playfair"><br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myPlayfairCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/5Playfair.js" type="text/javascript"></script>
+    </body>
+</html>

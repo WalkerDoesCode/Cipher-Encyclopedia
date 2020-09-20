@@ -141,3 +141,37 @@ function inRangeList(list,low,high) {
     }
     return true;
 }
+
+// valLetters returns the Vigenere order of each character in a string in a list
+// i.e. a = 0, b = 1, ... z = 25 (Not case sensitive)
+function valLetters(lString) {
+    var nString = lString.toLowerCase();
+    var lValues = [], char;
+    for(var i = 0; i<nString.length; i++) {
+        char = nString.charAt(i);
+        lValues.push(char.charCodeAt() - 97);
+    };
+    return lValues;
+}
+
+// valLetter returns the Vigenere order of a given character in a string
+// i.e. a = 0, b = 1, ... z = 25 (Not case sensitive)
+function valLetter(lString, i) {
+    var char = lString.charAt(i);
+    char = char.toLowerCase();
+    return char.charCodeAt() - 97;
+}
+
+// rankLetters returns a ranking of the indices from 0 to l-1 based on the alphabetical order of
+// the characters in the string
+function rankLetters(lString) {
+    var nString = lString.toLowerCase();
+    var l = nString.length;
+    var indices = [];
+    var i;
+    for(i = 0; i<l; i++) {
+        indices.push(i);
+    };
+    indices.sort((j,k) => valLetter(nString, j) - valLetter(nString, k));
+    return indices;
+}

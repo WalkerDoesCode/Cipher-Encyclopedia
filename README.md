@@ -6,3 +6,4 @@ Cipher #3: The Vigenere Cipher (Test at CodePen: https://codepen.io/WalkerDoesCo
 Cipher #4: The Railfence Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/OJNoaaP)  
 Cipher #5: The Playfair Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/rNeqGMg)  
 Cipher #6: The CT Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/xxVyMvE)  
+Cipher #7: The Trifid Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/RwaqGVz)  

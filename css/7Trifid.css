@@ -1,0 +1,35 @@
+body {
+    font-family: arial;
+  }
+  
+  #results {
+    width: 1000px;
+    height: 300px;
+    display: block;
+    background-color: white;
+    border: solid thin black;
+    padding: 10px;
+    margin-top: 20px;
+    overflow: auto;
+  }
+
+#trifidGrid {
+  width: 1000px;
+}
+
+  .formGrid {
+    width: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .cell {
+    flex: 0 0 32%;
+    height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .gCell {
+    width: 20px;
+  }

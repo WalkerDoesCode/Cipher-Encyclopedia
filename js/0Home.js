@@ -175,3 +175,19 @@ function rankLetters(lString) {
     indices.sort((j,k) => valLetter(nString, j) - valLetter(nString, k));
     return indices;
 }
+
+// transpose2D Array swaps the rows and columns of a 2D array to return the transpose of the array.
+function transpose2DArray(mat) {
+    var newMat = [];
+    var rows = mat.length;
+    var cols = mat[0].length;
+    var r,c,newRow;
+    for(c = 0; c < cols; c++) {
+        newRow = [];
+        for(r = 0; r<rows; r++) {
+            newRow.push(mat[r][c]);
+        }
+        newMat.push(newRow);
+    }
+    return newMat;
+}

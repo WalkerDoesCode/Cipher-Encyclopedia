@@ -191,3 +191,9 @@ function transpose2DArray(mat) {
     }
     return newMat;
 }
+
+// htmlHasID(elementID) returns true if an HTML element with ID "elementID" exists and false otherwise
+function htmlHasID(elementID) {
+    var element = document.getElementById(elementID);
+    return (element!=null);
+}

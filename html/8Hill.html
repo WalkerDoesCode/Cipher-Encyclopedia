@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/8Hill.css" type="text/css">
+        <title>Cipher 8: Hill</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #8: Hill Cipher <br>
+            Each letter is represented by a number modulo 26.<br><br>
+            To encrypt a message, each block of n letters (considered as an n-component vector) is multiplied 
+            by an invertible n × n matrix, against modulus 26. To decrypt the message, each block is multiplied 
+            by the inverse of the matrix used for encryption.<br><br>
+            The matrix used for encryption is the cipher key, and it should be chosen randomly from the set of 
+            invertible n × n matrices (modulo 26). The cipher can, of course, be adapted to an alphabet with 
+            any number of letters; all arithmetic just needs to be done modulo the number of letters instead 
+            of modulo 26. (Wikipedia)
+        </p>
+        <p>
+            Enter the text that you wish to perform the Hill Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "apple"><br>
+            Encryption Matrix Size: <input id = "cipherSize" type = "text" name = "keySize" value = "2"><br><br>
+        </form>    
+        <button onclick="makeHillMatrix()">Create Matrix</button><br><br>
+        <form id="frm2" action="/action_page.php">
+            <div id = "hillMatrix">
+                <div id = "hillRow1" class = "matrixContainer" width = "500px">
+                    <div class = "cell" width = "30px" height = "20px">
+                        <input id = "mat1-1" type = "text" name = "gKey" value = "2" class = "gCell">
+                    </div>
+                    <div class = "cell" width = "30px" height = "20px">
+                        <input id = "mat1-2" type = "text" name = "gKey" value = "7" class = "gCell">
+                    </div>
+                </div>
+
+                <div id = "hillRow2" class = "matrixContainer" width = "500px">
+                    <div class = "cell" width = "30px" height = "20px">
+                        <input id = "mat2-1" type = "text" name = "gKey" value = "5" class = "gCell">
+                    </div>
+                    <div class = "cell" width = "30px" height = "20px">
+                        <input id = "mat2-2" type = "text" name = "gKey" value = "22" class = "gCell">
+                    </div>
+                </div>
+            </div>
+            <br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myHillCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/8Hill.js" type="text/javascript"></script>
+    </body>
+</html>

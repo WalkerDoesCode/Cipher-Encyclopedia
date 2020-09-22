@@ -82,10 +82,10 @@ function myHillCipher() {
     text += "<br>";
     if(cipherOperation == "1") {
         text += "Corresponding plaintext: ";
-        text += encryptHill(tString, kMat);
+        text += decryptHill(tString, kMat);
     } else {
         text += "Corresponding ciphertext: ";
-        text += decryptHill(tString, kMat);
+        text += encryptHill(tString, kMat);
     }
 
     document.getElementById("demo").innerHTML = text;
@@ -121,15 +121,41 @@ function getHillTextMatrix(plain, s) {
     return pMat;
 }
 
+function getTextFromHillMatrix(a) {
+    var text = "", i, j;
+    for(i = 0; i<a.length; i++) {
+        for(j = 0; j<a[i].length; j++) {
+            text+=String.fromCharCode(a[i][j] + 97);
+        }
+    }
+    return text;
+}
+
 function encryptHill(plain, mat) {
+    plain = plain.toLowerCase();
     var s = mat.length;
     var pMat = getHillTextMatrix(plain, s);
-    
-    return "Cipher";
+    var aMat = multiplyMatrices(pMat, mat);
+    var bMat = mod2DArray(aMat, 26);
+    return getTextFromHillMatrix(bMat);
 }
 
 function decryptHill(cipher, mat) {
+    cipher = cipher.toLowerCase();
     var s = mat.length;
     var cMat = getHillTextMatrix(cipher, s);
-    return "Plain";
+    var decKeyMat = invertMatrix(mat);
+    if(decKeyMat == []) {
+        return "ERROR: Key Matrix is not invertible.";
+    }
+    var det = determinantMatrix(mat);
+    decKeyMat = scalarMultiplyMatrix(decKeyMat, det);
+    decKeyMat = roundMatrix(decKeyMat);
+    decKeyMat = scalarMultiplyMatrix(decKeyMat, modInv(det, 26));
+    decKeyMat = mod2DArray(decKeyMat, 26);
+    
+    var answerMat = multiplyMatrices(cMat, decKeyMat);
+    answerMat = mod2DArray(answerMat, 26);
+
+    return getTextFromHillMatrix(answerMat);
 }

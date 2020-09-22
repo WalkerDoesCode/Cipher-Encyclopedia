@@ -22,27 +22,45 @@
             Enter the text that you wish to perform the Hill Cipher on.
         </p>
         <form id="frm1" action="/action_page.php">
-            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "apple"><br>
-            Encryption Matrix Size: <input id = "cipherSize" type = "text" name = "keySize" value = "2"><br><br>
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "XQCHJAVRGPBT"><br>
+            Encryption Matrix Size: <input id = "cipherSize" type = "text" name = "keySize" value = "3"><br><br>
         </form>    
         <button onclick="makeHillMatrix()">Create Matrix</button><br><br>
         <form id="frm2" action="/action_page.php">
             <div id = "hillMatrix">
                 <div id = "hillRow1" class = "matrixContainer" width = "500px">
                     <div class = "cell" width = "30px" height = "20px">
-                        <input id = "mat1-1" type = "text" name = "gKey" value = "2" class = "gCell">
+                        <input id = "mat1-1" type = "text" name = "gKey" value = "1" class = "gCell">
                     </div>
                     <div class = "cell" width = "30px" height = "20px">
-                        <input id = "mat1-2" type = "text" name = "gKey" value = "7" class = "gCell">
+                        <input id = "mat1-2" type = "text" name = "gKey" value = "4" class = "gCell">
+                    </div>
+                    <div class = "cell" width = "30px" height = "20px">
+                        <input id = "mat1-3" type = "text" name = "gKey" value = "0" class = "gCell">
                     </div>
                 </div>
 
                 <div id = "hillRow2" class = "matrixContainer" width = "500px">
                     <div class = "cell" width = "30px" height = "20px">
-                        <input id = "mat2-1" type = "text" name = "gKey" value = "5" class = "gCell">
+                        <input id = "mat2-1" type = "text" name = "gKey" value = "7" class = "gCell">
                     </div>
                     <div class = "cell" width = "30px" height = "20px">
-                        <input id = "mat2-2" type = "text" name = "gKey" value = "22" class = "gCell">
+                        <input id = "mat2-2" type = "text" name = "gKey" value = "11" class = "gCell">
+                    </div>
+                    <div class = "cell" width = "30px" height = "20px">
+                        <input id = "mat2-3" type = "text" name = "gKey" value = "2" class = "gCell">
+                    </div>
+                </div>
+
+                <div id = "hillRow3" class = "matrixContainer" width = "500px">
+                    <div class = "cell" width = "30px" height = "20px">
+                        <input id = "mat3-1" type = "text" name = "gKey" value = "0" class = "gCell">
+                    </div>
+                    <div class = "cell" width = "30px" height = "20px">
+                        <input id = "mat3-2" type = "text" name = "gKey" value = "5" class = "gCell">
+                    </div>
+                    <div class = "cell" width = "30px" height = "20px">
+                        <input id = "mat3-3" type = "text" name = "gKey" value = "1" class = "gCell">
                     </div>
                 </div>
             </div>

@@ -7,3 +7,4 @@ Cipher #4: The Railfence Cipher (Test at CodePen: https://codepen.io/WalkerDoesC
 Cipher #5: The Playfair Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/rNeqGMg)  
 Cipher #6: The CT Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/xxVyMvE)  
 Cipher #7: The Trifid Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/RwaqGVz)  
+Cipher #8: The Hill Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/rNeQgEX)  

@@ -406,3 +406,18 @@ function scalarMultiplyMatrix(mat, s) {
     }
     return newMat;
 }
+
+// contains2DArray(mat,v) returns true if v is in the 2D Array mat and false otherwise.
+function contains2DArray(mat, v) {
+    var r = mat.length;
+    var c = mat[0].length;
+    var i,j;
+    for(i = 0; i<r; i++) {
+        for(j = 0; j<c; j++) {
+            if(mat[i][j] == v) {
+                return true;
+            }
+        }
+    }
+    return false;
+}

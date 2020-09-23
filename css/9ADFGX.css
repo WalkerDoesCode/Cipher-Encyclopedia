@@ -1,8 +1,8 @@
 body {
     font-family: arial;
-  }
+}
   
-  #results {
+#results {
     width: 1000px;
     height: 300px;
     display: block;
@@ -11,21 +11,17 @@ body {
     padding: 10px;
     margin-top: 20px;
     overflow: auto;
-  }
-
-#trifidGrid {
-  width: 1000px;
 }
 
-.formGrid {
-  width: 90px;
+#gridContainer {
+  width: 140px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .cell {
-  flex: 0 0 32%;
+  flex: 0 0 20%;
   height: 20px;
   margin-bottom: 5px;
 }

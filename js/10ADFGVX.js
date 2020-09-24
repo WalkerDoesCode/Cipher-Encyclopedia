@@ -70,10 +70,38 @@ function myADFGVXCipher() {
     document.getElementById("demo").innerHTML = text;
 };
 
+function getADFGVXPair(char, mat, cols) {
+    var i = mat.indexOf(char);
+    var row = i/6;
+    var col = i%6;
+    return cols.charAt(row) + cols.charAt(col);
+}
+
+function getReverseADFGVXChar(mat, cols, rowL, colL) {
+    row = cols.indexOf(rowL);
+    col = cols.indexOf(colL);
+    var i = 6*row+col;
+    return mat.charAt(i);
+}
+
 function decryptADFGVX(cipher, mat, cols, key) {
-    return "Plain";
+    cipher = cipher.toUpperCase();
+    cols = cols.toUpperCase();
+    var newCipher = invertColumnarTransposition(cipher, key);
+    var newMat = simpleString2DArray(mat);
+    var l = newCipher.length, i, text = "";
+    for(i = 0; i<l; i+=2) {
+        text += getReverseADFGVXChar(newMat, cols, newCipher.charAt(i), newCipher.charAt(i+1));
+    }
+    return text;
 }
 
 function encryptADFGVX(plain, mat, cols, key) {
-    return "Cipher";
+    plain = plain.toLowerCase();
+    var newMat = simpleString2DArray(mat);
+    var l = plain.length, i, text = "";
+    for(i = 0; i<l; i++) {
+        text += getADFGVXPair(plain.charAt(i), newMat, cols);
+    }
+    return columnarTransposition(text, key);
 }

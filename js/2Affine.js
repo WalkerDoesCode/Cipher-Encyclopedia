@@ -6,6 +6,12 @@ function myAffineCipher() {
     var multiplyString = multiply.value;
     var multiplyNum = parseInt(multiplyString, 10);
 
+    if(myGCD(multiplyNum, 26)!= 1) {
+        text = "ERROR: INVALID MULTIPLICATION KEY  (gcd(a,26) != 1)";
+        document.getElementById("demo").innerHTML = text;
+        return;
+    }
+
     var shift = document.getElementById("cipherShift");
     var shiftString = shift.value;
     var shiftNum = parseInt(shiftString,10);
@@ -35,52 +41,21 @@ function myAffineCipher() {
     
     if(cipherOperation == "1") {
         text += "Corresponding plaintext: ";
-        if(myGCD(multiplyNum,26)!=1) {
-            text = "ERROR: INVALID MULTIPLICATION KEY  (gcd(a,26) != 1)";
-        } else {
-            text += decryptAffine(tString, multiplyNum, shiftNum);
-        };
+        text += decryptAffine(tString, multiplyNum, shiftNum);
     } else {
         text += "Corresponding ciphertext: ";
-        multiplyNum = modInv(multiplyNum,26);
-        if(multiplyNum>=0) {
-            text+= decryptAffine(tString, multiplyNum, -shiftNum);
-        } else {
-            text = "ERROR: INVALID MULTIPLICATION KEY  (gcd(a,26) != 1)";
-        }
+        text+= encryptAffine(tString, multiplyNum, shiftNum);
     }
-    
-
-
     document.getElementById("demo").innerHTML = text;
 };
 
 function decryptAffine(cipherText, multiply, shift) {
-    if(myGCD(multiply,26) != 1) {
-        return "26 ERROR";
-    }
+    cipherText = shiftString(cipherText, -shift);
+    var newMult = modInv(multiply, 26);
+    return multiplyString(cipherText, newMult);
+}
 
-    var text = "";
-    var character = 0;
-    var newAscii = 0;
-    var v = 0;
-    var multDec = modInv(multiply, 26);
-    for(i=0; i<cipherText.length; i++) {
-        character = cipherText.charCodeAt(i);
-        if(65<=character && character<=90) {
-            v = modGreater(character,65+shift,26);
-            v*=multDec;
-            v%=26;
-            newAscii = v+65;
-        } else if(97<=character && character<=122) {
-            v = modGreater(character,97+shift,26);
-            v*=multDec;
-            v%=26;
-            newAscii = v+97;
-        } else {
-            return "6597 ERROR"
-        }
-        text+=String.fromCharCode(newAscii);
-    }
-    return text;
+function encryptAffine(plainText, multiply, shift) {
+    plainText = multiplyString(plainText, multiply);
+    return shiftString(plainText, shift);
 }

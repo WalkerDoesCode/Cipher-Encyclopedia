@@ -164,17 +164,39 @@ function valLetter(lString, i) {
 }
 
 // rankLetters returns a ranking of the indices from 0 to l-1 based on the alphabetical order of
-// the characters in the string
-function rankLetters(lString) {
-    var nString = lString.toLowerCase();
+// the characters in the string (rankLetters("apple") = [0,4,3,1,2])
+function rankLetters(nString) {
     var l = nString.length;
     var indices = [];
     var i;
     for(i = 0; i<l; i++) {
         indices.push(i);
     };
-    indices.sort((j,k) => valLetter(nString, j) - valLetter(nString, k));
+    indices.sort((j,k) => 100*(valLetter(nString, j) - valLetter(nString, k))+(j-k));
     return indices;
+}
+
+// listNIntegers(n) returns an array with the first n natural numbers.
+function listNIntegers(n) {
+    var indices = [];
+    for(i = 0; i<n; i++) {
+        indices.push(i);
+    }
+    return indices;
+}
+
+// invertRankLetters returns a ranking of the position of the alphabetical order of the characters in the string
+// based on their corresponding positions in the string (rankLetters("apple") = [0,3,4,2,1]) 
+function invertRankLetters(lString) {
+    var l = lString.length;
+    var indices = listNIntegers(l);
+    var rank = rankLetters(lString);
+    indices.sort((j,k) => rank.indexOf(j) - rank.indexOf(k));
+    var final = [];
+    for(i = 0; i<l; i++) {
+        final.push(indices.indexOf(i));
+    }
+    return final;
 }
 
 // transpose2D Array swaps the rows and columns of a 2D array to return the transpose of the array.
@@ -420,4 +442,130 @@ function contains2DArray(mat, v) {
         }
     }
     return false;
+}
+
+// shiftString(string, shift) shifts all characters in string forward by shift places in the alphabet.
+// Keeps original case and does not change non alphabetical characters.
+function shiftString(string, shift) {
+    var text = "";
+    var character = 0;
+    var newAscii = 0;
+    var v;
+    for(i = 0; i<string.length; i++) {
+        character = string.charCodeAt(i);
+        if(65<=character && character<=90) {
+            v = modGreater(character,65-shift,26);
+            newAscii = v + 65;
+        } else if(97<=character && character<=122) {
+            v = modGreater(character,97-shift,26);
+            newAscii = v + 97;
+        } else {
+            newAscii = character;
+        }
+        text += String.fromCharCode(newAscii);
+    }
+    return text;
+}
+
+// multiplyString(string, mult) multiplies the alphabetic indices of all alphabetic characters in string
+// by mult and returns the corresponding letters in a new string. 
+function multiplyString(string, mult) {
+    if(myGCD(mult,26)!=1) {
+        return string;
+    }
+    mult = modGreater(mult,0,26);
+    var text = "";
+    var character, newAscii, v, i;
+    for(i = 0; i< string.length; i++) {
+        character = string.charCodeAt(i);
+        if(65<=character && character<=90) {
+            v = modGreater(character, 65, 26);
+            newAscii = modGreater((v*mult),0,26) + 65;
+        } else if(97<=character && character<=122) {
+            v = modGreater(character, 97, 26);
+            newAscii = modGreater((v*mult),0,26) + 97;
+        } else {
+            newAscii = character;
+        }
+        text+=String.fromCharCode(newAscii);
+    }
+    return text;
+}
+
+// simpleString2DArray(mat) concatenates all objects in the 2D array mat as a single string.
+function simpleString2DArray(mat) {
+    var text = "";
+    var i,j;
+    for(i = 0;i<mat.length;i++) {
+        for(j = 0; j<mat[i].length; j++) {
+            text += mat[i][j].toString();
+        }
+    }
+    return text;
+}
+
+// columnarTransposition(plain, k) performs a columnar transposition on the letters of plain based on the letters of k.
+// See the CT Cipher
+function columnarTransposition(plain, k) {
+    var kLength = k.length;
+    var pLength = plain.length;
+    var columns = [], i, j = 0;
+    for(i = 0; i<kLength; i++) {
+        columns.push([]);
+    }
+    for(i = 0; i<pLength; i++) {
+        columns[j].push(plain.charAt(i));
+        j+=1;
+        j%=kLength;
+    }
+    var ranking = rankLetters(k);
+    var text = "";
+    for(i = 0; i<kLength; i++) {
+        text += columns[ranking[i]].join("");
+    }
+    return text;
+}
+
+// invertColumnarTransposition(cipher, k) performs a reverse columnar transposition on the letters of cipher based on the letters of k.
+// See the CT Cipher
+function invertColumnarTransposition(cipher, k) {
+    var invRanking = invertRankLetters(k);
+    var cLength = cipher.length;
+    var kLength = k.length;
+    var complete = cLength%kLength;
+    var shortLength = ~~(cLength/kLength);
+    var newColumns = [];
+    var total = 0, cur, i = 0, j, curCol;
+    while(total<cLength) {
+        if(invRanking.indexOf(i)+1<=complete) {
+            cur = shortLength + 1;
+        } else {
+            cur = shortLength;
+        }
+        i+=1;
+        curCol = [];
+        for(j = 0; j<cur; j++) {
+            curCol.push(cipher.charAt(total+j));
+        }
+        newColumns.push(curCol);
+        total += cur;
+    }
+    var oldColumns = [];
+    for(i = 0; i<kLength; i++) {
+        oldColumns.push(newColumns[invRanking[i]]);
+    }
+    var text = "";
+    for(i = 0; i<shortLength; i++) {
+        for(j = 0; j<kLength; j++) {
+            text += oldColumns[j][i];
+        }
+    }
+    for(j = 0; j<kLength; j++) {
+        if(oldColumns[j].length>shortLength) {
+            text += oldColumns[j][shortLength];
+        } else {
+            break;
+        }
+    }
+    return text;
 }

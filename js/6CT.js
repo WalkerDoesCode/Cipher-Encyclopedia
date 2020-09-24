@@ -38,62 +38,9 @@ function myCTCipher() {
 };
 
 function decryptCT(cipher, k) {
-    var ranking = rankLetters(k);
-    var cLength = cipher.length;
-    var kLength = k.length;
-    var complete = cLength%kLength;
-    var shortLength = ~~(cLength/kLength);
-    var newColumns = [];
-    var total = 0, cur, i = 0, j, curCol;
-    while(total<cLength) {
-        if(ranking.indexOf(i)+1<=complete) {
-            cur = shortLength + 1;
-        } else {
-            cur = shortLength;
-        }
-        curCol = [];
-        for(j = 0; j<cur; j++) {
-            curCol.push(cipher.charAt(total+j));
-        }
-        newColumns.push(curCol);
-        total += cur;
-    }
-    var oldColumns = [];
-    for(i = 0; i<kLength; i++) {
-        oldColumns.push(newColumns[ranking.indexOf(i)]);
-    }
-    var text = "";
-    for(i = 0; i<shortLength; i++) {
-        for(j = 0; j<kLength; j++) {
-            text += oldColumns[j][i];
-        }
-    }
-    for(j = 0; j<kLength; j++) {
-        if(oldColumns[j].length>shortLength) {
-            text += oldColumns[j][shortLength];
-        } else {
-            break;
-        }
-    }
-    return text;
+    return invertColumnarTransposition(cipher, k);
 }
 
 function encryptCT(plain, k) {
-    var kLength = k.length;
-    var pLength = plain.length;
-    var columns = [], i, j = 0;
-    for(i = 0; i<kLength; i++) {
-        columns.push([]);
-    }
-    for(i = 0; i<pLength; i++) {
-        columns[j].push(plain.charAt(i));
-        j+=1;
-        j%=kLength;
-    }
-    var ranking = rankLetters(k);
-    var text = "";
-    for(i = 0; i<kLength; i++) {
-        text += columns[ranking[i]].join("");
-    }
-    return text;
+    return columnarTransposition(plain,k);
 }

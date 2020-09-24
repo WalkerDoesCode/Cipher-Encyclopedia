@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/10ADFGVX.css" type="text/css">
+        <title>Cipher 10: ADFGVX</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #10: ADFGVX Cipher <br>
+            In cryptography, the ADFGVX cipher was a field cipher used by the German Army during World War I. 
+            ADFGVX was in fact an extension of an earlier cipher called the ADFGX cipher. Invented by Colonel 
+            Fritz Nebel and introduced in March 1918, the cipher was a fractionating transposition cipher which 
+            combined a modified Polybius square with a single columnar transposition. The cipher is named after 
+            the six possible letters used in the ciphertext: A, D, F, G, V and X. These letters were chosen 
+            deliberately because they sound very different from each other when transmitted via morse code. 
+            The intention was to reduce the possibility of operator error.<br><br>
+
+            The 'key' for a ADFGVX cipher is a 'key square' and a key word. The key square is a 6 by 6 square 
+            containing all the letters and the numbers 0 - 9. The key word is any word e.g. GERMAN.<br><br>
+
+            Encode the plaintext using this matrix, to encode the laetter 'a', locate it in the matrix and read off 
+            the letter on the far left side on the same row, followed by the letter at the top in the same column. 
+            In this way each plaintext letter is replaced by two cipher text letters. E.g. 'attack' -> 'DG XG XG DG 
+            GV GD'. The ciphertext is now twice as long as the original plaintext. Note that so far, it is just a 
+            simple substitution cipher, and trivial to break.<br><br>
+
+            Write the code word with the enciphered plaintext underneath. Perform a columnar transposition. Sort the 
+            code word alphabetically, moving the columns as you go. Note that the letter pairs that make up each 
+            letter get split apart during this step, this is called fractionating.<br><br>
+
+            Read the final ciphertext off in columns. (Practical Cryptography)
+        </p>
+        <p>
+            Enter the text that you wish to perform the ADFGVX Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "apple"><br>
+            Encryption Key (Column Letters): <input id = "cipherKeyColumns" type = "text" name = "key" value = "ADFGVX"><br>
+            Encryption Key (Key Word): <input id = "cipherKeyWord" type = "text" name = "key" value = "GERMAN"><br>
+            <div id = "gridContainer" class = "gridCollection">
+                Encryption Key: (Key Grid) <br>
+                <div class = "cell">
+                    <input id = "grid1" type = "text" name = "gKey" value = "p" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid2" type = "text" name = "gKey" value = "h" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid3" type = "text" name = "gKey" value = "0" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid4" type = "text" name = "gKey" value = "q" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid5" type = "text" name = "gKey" value = "g" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid6" type = "text" name = "gKey" value = "6" class = "gCell">
+                </div>
+                <br>
+
+                <div class = "cell">
+                    <input id = "grid7" type = "text" name = "gKey" value = "4" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid8" type = "text" name = "gKey" value = "m" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid9" type = "text" name = "gKey" value = "e" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid10" type = "text" name = "gKey" value = "a" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid11" type = "text" name = "gKey" value = "1" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid12" type = "text" name = "gKey" value = "y" class = "gCell">
+                </div>
+                <br>
+
+                <div class = "cell">
+                    <input id = "grid13" type = "text" name = "gKey" value = "l" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid14" type = "text" name = "gKey" value = "2" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid15" type = "text" name = "gKey" value = "n" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid16" type = "text" name = "gKey" value = "o" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid17" type = "text" name = "gKey" value = "f" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid18" type = "text" name = "gKey" value = "d" class = "gCell">
+                </div>
+                <br>
+
+                <div class = "cell">
+                    <input id = "grid19" type = "text" name = "gKey" value = "x" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid20" type = "text" name = "gKey" value = "k" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid21" type = "text" name = "gKey" value = "r" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid22" type = "text" name = "gKey" value = "3" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid23" type = "text" name = "gKey" value = "c" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid24" type = "text" name = "gKey" value = "v" class = "gCell">
+                </div>
+                <br>
+
+                <div class = "cell">
+                    <input id = "grid25" type = "text" name = "gKey" value = "s" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid26" type = "text" name = "gKey" value = "5" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid27" type = "text" name = "gKey" value = "z" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid28" type = "text" name = "gKey" value = "w" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid29" type = "text" name = "gKey" value = "7" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid30" type = "text" name = "gKey" value = "b" class = "gCell">
+                </div>
+                <br>
+
+                <div class = "cell">
+                    <input id = "grid31" type = "text" name = "gKey" value = "j" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid32" type = "text" name = "gKey" value = "9" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid33" type = "text" name = "gKey" value = "u" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid34" type = "text" name = "gKey" value = "t" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid35" type = "text" name = "gKey" value = "i" class = "gCell">
+                </div>
+                <div class = "cell">
+                    <input id = "grid36" type = "text" name = "gKey" value = "8" class = "gCell">
+                </div>
+            </div>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myADFGVXCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/10ADFGVX.js" type="text/javascript"></script>
+    </body>
+</html>

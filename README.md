@@ -10,3 +10,4 @@ Cipher #7: The Trifid Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode
 Cipher #8: The Hill Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/rNeQgEX)  
 Cipher #9: The ADFGX Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/eYZbMgO)  
 Cipher #10: The ADFGVX Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/KKzJNQZ)  
+Cipher #11: The Simple Substitution Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/RwadLpm)  

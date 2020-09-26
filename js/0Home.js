@@ -157,7 +157,7 @@ function valLetters(lString) {
 
 // valLetter returns the Vigenere order of a given character in a string
 // i.e. a = 0, b = 1, ... z = 25 (Not case sensitive)
-function valLetter(lString, i) {
+function valLetter(lString, i=0) {
     var char = lString.charAt(i);
     char = char.toLowerCase();
     return char.charCodeAt() - 97;

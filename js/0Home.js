@@ -569,3 +569,25 @@ function invertColumnarTransposition(cipher, k) {
     }
     return text;
 }
+
+// baseStringDigits(num, numDigits, base) returns the least significant "numDigits" number of digits of the
+// string of the value of num in base "base". For example, baseStringDigits(9,5,2) = "01001", baseStringDigits(14,3,2) = "110"
+function baseStringDigits(num, numDigits, base=2) {
+    var s = num.toString(base);
+    var l = s.length;
+    if(l>numDigits) {
+        return s.substring(l-numDigits, l);
+    } else {
+        while(l<numDigits) {
+            s = "0" + s;
+            l+=1;
+        }
+    }
+    return s;
+}
+
+// reverseValLetter(n) returns the letter in the alphabet associated with the vigenere order n.
+function reverseValLetter(n) {
+    n = modGreater(n,0,26);
+    return String.fromCharCode(97+n);
+}

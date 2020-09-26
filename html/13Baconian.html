@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/13Baconian.css" type="text/css">
+        <title>Cipher 13: Bacon</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #13: Baconian Cipher <br>
+            The Baconian cipher is a substitution cipher in which each letter is replaced by a sequence of 5 characters. 
+            Each letter is assigned to a string of five binary digits. These could be the letters 'A' and 'B', the numbers 
+            0 and 1 or whatever else you may desire. <br><br>
+            Given an encryption low key of "a" and an encryption high key of "b", this program uses the following encryption
+            scheme that was listed on Practical Cryptography:<br><br>
+        </p>
+        <img src = "../img/BaconianEncryptionKey.png" alt = "Practical Cryptography Baconian Encryption Scheme">
+        <p>
+            Enter the text that you wish to perform the Baconian Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "aaaaaabbbaabbbaababaaabaa"><br>
+            Encryption Key Low Letter: <input id = "cipherLow" type = "text" name = "key" value = "a"><br>
+            Encryption Key High Letter: <input id = "cipherHigh" type = "text" name = "key" value = "b"><br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myBaconianCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/13Baconian.js" type="text/javascript"></script>
+    </body>
+</html>

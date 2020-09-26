@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/12Base64.css" type="text/css">
+        <title>Cipher 12: Base 64</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #12: Base 64 Cipher <br>
+            In computer science, Base64 is a group of binary-to-text encoding schemes that represent binary data in an ASCII string format 
+            by translating it into a radix-64 representation. The term Base64 originates from a specific MIME content transfer encoding. 
+            Each Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a total of 24 bits) can therefore be represented 
+            by four 6-bit Base64 digits.<br><br>
+            The particular set of 64 characters chosen to represent the 64 digit-values for the base varies between implementations. The 
+            general strategy is to choose 64 characters that are common to most encodings and that are also printable. This combination leaves 
+            the data unlikely to be modified in transit through information systems, such as email, that were traditionally not 8-bit clean. 
+            For example, MIME's Base64 implementation uses A–Z, a–z, and 0–9 for the first 62 values. Other variations share this property but 
+            differ in the symbols chosen for the last two values; an example is UTF-7. (Wikipedia)<br><br>
+        </p>
+        <p>
+            Enter the text that you wish to perform the Base 64 Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "YXBwbGU="><br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myBase64Cipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/12Base64.js" type="text/javascript"></script>
+    </body>
+</html>

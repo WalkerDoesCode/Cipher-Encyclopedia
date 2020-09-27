@@ -42,6 +42,6 @@ function decryptCaesar(cipherText, key) {
     return shiftString(cipherText, -key);
 }
 
-function encryptCaesar(cipherText, key) {
-    return shiftString(cipherText, key);
+function encryptCaesar(plainText, key) {
+    return shiftString(plainText, key);
 }

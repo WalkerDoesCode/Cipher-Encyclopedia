@@ -13,4 +13,5 @@ Cipher #10: The ADFGVX Cipher (Test at CodePen: https://codepen.io/WalkerDoesCod
 Cipher #11: The Simple Substitution Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/RwadLpm)  
 Cipher #12: The Base 64 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/RwadLZz)  
 Cipher #13: The Baconian Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/GRZeBEr)  
+Cipher #14: The Autokey Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/rNeRZpe)  
 

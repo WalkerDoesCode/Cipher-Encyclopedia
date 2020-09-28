@@ -591,3 +591,18 @@ function reverseValLetter(n) {
     n = modGreater(n,0,26);
     return String.fromCharCode(97+n);
 }
+
+// convertLettersInString(myString, oldC, newC) returns myString with all instances of oldC replaced with newC.
+function convertLettersInString(myString, oldC, newC) {
+    var text = "";
+    var i, l = myString.length, char;
+    for(i = 0; i<l; i++) {
+        char = myString.charAt(i);
+        if(char==oldC) {
+            text += newC;
+        } else {
+            text += char;
+        }
+    }
+    return text;
+}

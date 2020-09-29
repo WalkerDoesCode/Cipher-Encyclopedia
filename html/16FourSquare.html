@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/16FourSquare.css" type="text/css">
+        <title>Cipher 16: 4 Square</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #15: Four Square Cipher <br>
+            The four-square cipher uses four 5 by 5 matrices arranged in a square. Each of the 5 by 5 matrices contains 
+            25 letters, usually the letter 'j' is merged with 'i' (wikipedia says 'q' is omitted, it is not very important 
+            since both q and j are rather rare letters). In general, the upper-left and lower-right matrices are the 
+            "plaintext squares" and each contain a standard alphabet. The upper-right and lower-left squares are the "ciphertext 
+            squares" and contain a mixed alphabetic sequence. <br><br> 
+            Below is an example of what these four square grids could look like: <br><br>
+        </p>
+        <img src = "../img/FourSquareEncryptionKey.png" alt = "Practical Cryptography Example Four Square Key">
+        <p>
+            <br>
+            1) Break up the plaintext into bigrams i.e. ATTACK AT DAWN --> AT TA CK AT DA WN. An 'X' (or some other character) may 
+            have to be appended to ensure the plaintext is an even length. <br><br>
+            2) Using the four 'squares', two plain alphabet squares and two cipher alphabet squares, locate the bigram to 
+            encrypt in the plain alphabet squares. The first letter is located 
+            from the top left square, the second letter is located in the bottom right square. <br><br>
+            3) Locate the characters in the ciphertext at the corners of the rectangle that the letters in the bigram make. (Practical Cryptography)
+        </p>
+        <p>
+            Enter the text that you wish to perform the Four Square Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "apple"><br>
+        </form>
+        <button onclick="generateFourSquareGrids()">Create Four Square Grids</button><br><br>
+        <form id="frm2" action="/action_page.php">
+            <div id = "gridLabel"></div>
+            <div id = "gridContainer" class = "gridCollection"></div>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myFourSquareCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/16FourSquare.js" type="text/javascript"></script>
+    </body>
+</html>

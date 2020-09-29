@@ -15,3 +15,5 @@ Cipher #12: The Base 64 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCo
 Cipher #13: The Baconian Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/GRZeBEr)  
 Cipher #14: The Autokey Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/rNeRZpe)  
 Cipher #15: The Bifid Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/bGpJNaz)  
+Cipher #16: The Four Square Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ZEWZmNw)  
+

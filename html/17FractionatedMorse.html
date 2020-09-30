@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/1Caesar.css" type="text/css">
+        <title>Cipher 17: Fractionated Morse</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #17: Fractionated Morse Cipher <br>
+            The Fractionated Morse cipher first converts the plaintext to morse code, then enciphers fixed 
+            size blocks of morse code back to letters. This procedure means plaintext letters are mixed into 
+            the ciphertext letters i.e. one plaintext letter does not map to one ciphertext letter. This 
+            makes it more secure than e.g. substitution ciphers, but it can still be broken with some effort. 
+            One of the benefits of the Fractioned Morse cipher is that it can encipher spaces and punctuation 
+            just as easily as letters. The ciphertext message will generally be of a similar length to the 
+            plaintext message, but often will have a slightly different number of characters.<br><br>
+            To pass an encrypted message from one person to another, it is first necessary that both parties have the 
+            'key' for the cipher, so that the sender may encrypt it and the receiver may decrypt it. For the 
+            Fractionated Morse cipher, the key is a mixed alphabet e.g. "ROUNDTABLECFGHIJKMPQSVWXYZ".<br><br> 
+            Here is a chart of Morse Code for reference:
+        </p>
+        <img src = "../img/MorseCodeChart.png" alt = "Morse Code Chart">
+        <p>
+            (Practical Cryptography)
+        </p>
+        <p>
+            Enter the text that you wish to perform the Fractionated Morse Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "defend the east"><br>
+            Encryption Key: <input id = "cipherKey" type = "text" name = "key" value = "roundtable"><br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myFractionatedMorseCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/17FractionatedMorse.js" type="text/javascript"></script>
+    </body>
+</html>

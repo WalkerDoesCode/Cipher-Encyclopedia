@@ -606,3 +606,72 @@ function convertLettersInString(myString, oldC, newC) {
     }
     return text;
 }
+
+// getMorseCode(myString) returns the Morse Code equivalent of myString.
+function getMorseCode(myString) {
+    myString = myString.toLowerCase();
+    var l = myString.length;
+    var i, text = "", char, v;
+    var alphabet = "abcdefghijklmnopqrstuvwxyz.,:\"\'!?@-;()=1234567890 ";
+    var morseAlphabet = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..",".-.-.-","--..--","---...",".-..-.",".----.","-.-.--","..--..",".--.-.","-....-","-.-.-.","-.--.","-.--.-","-...-",".----","..---","...--","....-",".....","-....","--...","---..","----.","-----",""];
+    for(i = 0; i<l; i++) {
+        char = myString.charAt(i);
+        v = alphabet.indexOf(char);
+        if(v<0) {
+            text+="-..-";
+        } else {
+            text+=morseAlphabet[v];
+        }
+        text+="x";
+    }
+    return text;
+}
+
+// decryptMorseCode(myString) returns the English text equivalent of the morse code myString.
+function decryptMorseCode(myString) {
+    var alphabet = "abcdefghijklmnopqrstuvwxyz.,:\"\'!?@-;()=1234567890 ";
+    var morseAlphabet = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..",".-.-.-","--..--","---...",".-..-.",".----.","-.-.--","..--..",".--.-.","-....-","-.-.-.","-.--.","-.--.-","-...-",".----","..---","...--","....-",".....","-....","--...","---..","----.","-----",""];
+    myString = myString.toLowerCase();
+    var i, v, sub, text = "";
+    while(myString.length>0) {
+        v = myString.indexOf("x");
+        if(v==-1) {
+            text += alphabet.charAt(morseAlphabet.indexOf(myString));
+            return text;
+        }
+        sub = myString.substring(0,v);
+        text += alphabet.charAt(morseAlphabet.indexOf(sub));
+        myString = myString.substring(v+1, myString.length);
+    }
+    return text;
+}
+
+// Returns a rearrangement of alphabet that begins with the corresponding (non-repeating)
+// letters in key.
+function keyWithAlphabet(key, alphabet) {
+    key = key.toLowerCase();
+    alphabet = alphabet.toLowerCase();
+    var grid = "";
+    var character, i;
+    for(i = 0; i<key.length; i++) {
+        character = key.charAt(i);
+        character = character.toLowerCase();
+        if(!(grid.includes(character))) {
+            if(character=="j") {
+                if(!grid.includes("i")) {
+                    grid += "i";
+                }
+            } else {
+                grid+=character;
+            }
+        }
+    }
+    var reducedAlphabet = "";
+    for(i = 0; i<alphabet.length; i++) {
+        character = alphabet.charAt(i);
+        if(!(grid.includes(character))) {
+            reducedAlphabet+=character;
+        }
+    }
+    return grid+reducedAlphabet;
+}

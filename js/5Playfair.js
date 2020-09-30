@@ -24,7 +24,8 @@ function myPlayfairCipher() {
     };
 
     text += tString + "<br><br>";
-    text += "Key = " + kString + "<br><br>";
+    var akString = keyWithAlphabet(kString, "abcdefghiklmnopqrstuvwxyz");
+    text += "Key = " + kString + " (" + akString + ")<br><br>";
 
     if(cipherOperation == "1") {
         text += "Corresponding plaintext: ";
@@ -138,28 +139,5 @@ function makePlayfairReducedPlaintext(plain) {
 }
 
 function makePlayfairGrid(key) {
-    var grid = "";
-    var character, i;
-    for(i = 0; i<key.length; i++) {
-        character = key.charAt(i);
-        character = character.toLowerCase();
-        if(!(grid.includes(character))) {
-            if(character=="j") {
-                if(!grid.includes("i")) {
-                    grid += "i";
-                }
-            } else {
-                grid+=character;
-            }
-        }
-    }
-    var alphabet = "abcdefghiklmnopqrstuvwxyz";     // No j because i = j in Playfair
-    var reducedAlphabet = "";
-    for(i = 0; i<25; i++) {
-        character = alphabet.charAt(i);
-        if(!(grid.includes(character))) {
-            reducedAlphabet+=character;
-        }
-    }
-    return grid+reducedAlphabet;
+    return keyWithAlphabet(key, "abcdefghiklmnopqrstuvwxyz");
 }

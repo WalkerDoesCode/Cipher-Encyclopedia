@@ -16,4 +16,4 @@ Cipher #13: The Baconian Cipher (Test at CodePen: https://codepen.io/WalkerDoesC
 Cipher #14: The Autokey Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/rNeRZpe)  
 Cipher #15: The Bifid Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/bGpJNaz)  
 Cipher #16: The Four Square Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ZEWZmNw)  
-
+Cipher #17: The Fractionated Morse Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/rNegXRa)  

@@ -17,3 +17,4 @@ Cipher #14: The Autokey Cipher (Test at CodePen: https://codepen.io/WalkerDoesCo
 Cipher #15: The Bifid Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/bGpJNaz)  
 Cipher #16: The Four Square Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ZEWZmNw)  
 Cipher #17: The Fractionated Morse Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/rNegXRa)  
+Cipher #18: The Polybius Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/oNxrdej)  

@@ -19,3 +19,4 @@ Cipher #16: The Four Square Cipher (Test at CodePen: https://codepen.io/WalkerDo
 Cipher #17: The Fractionated Morse Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/rNegXRa)  
 Cipher #18: The Polybius Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/oNxrdej)  
 Cipher #19: The Porta Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/OJNeZwO)  
+Cipher #20: The Straddle Checkerboard Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/VwaoLMM)  

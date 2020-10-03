@@ -656,14 +656,8 @@ function keyWithAlphabet(key, alphabet) {
     for(i = 0; i<key.length; i++) {
         character = key.charAt(i);
         character = character.toLowerCase();
-        if(!(grid.includes(character))) {
-            if(character=="j") {
-                if(!grid.includes("i")) {
-                    grid += "i";
-                }
-            } else {
-                grid+=character;
-            }
+        if(!(grid.includes(character)) && alphabet.includes(character)) {
+            grid += character;
         }
     }
     var reducedAlphabet = "";
@@ -674,4 +668,29 @@ function keyWithAlphabet(key, alphabet) {
         }
     }
     return grid+reducedAlphabet;
+}
+
+// Returns the alphabet in lowercase.
+function getAlphabet() {
+    return "abcdefghijklmnopqrstuvwxyz";
+}
+
+// Converts the letters in a string to a 2D array with dimensions r x c. Fills in all empty spaces with dash "-"
+function make2DArrayFromString(tString, r, c) {
+    var grid = [];
+    var total = 0, l = tString.length;
+    var i,j,row;
+    for(i = 0; i<r; i++) {
+        row = [];
+        for(j = 0; j<c; j++) {
+            if(total<l) {
+                row.push(tString.charAt(total));
+            } else {
+                row.push("-");
+            }
+            total+=1;
+        }
+        grid.push(row);
+    }
+    return grid;
 }

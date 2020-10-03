@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/20StraddleCheckerboard.css" type="text/css">
+        <title>Cipher 20: Straddle Checkerboard</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #20: Straddle Checkerboard Cipher <br>
+            The key for a straddling checkerboard is a permutation of the alphabet e.g. 'fkmcpdyehbigqrosazlutjnwvx', 
+            along with 2 numbers e.g. 3 and 7. A straddling checkerboard is set up something like this (using the key 
+            information above): <br><br>
+        </p>
+        <img src = "../img/StraddleCheckerboard.png" alt = "Straddle Checkerboard Arrangement">
+        <p>    
+            The first row is set up with the first eight key letters, leaving two blank spots. It has no row label. 
+            The second and third rows are labelled with whichever two digits didn't get a letter in the top row, and 
+            then filled out with the rest of the key letters. Since there are 30 slots in our grid, and we missed two letters 
+            in the first row, there will end up being two spare in the other rows. It doesn't matter where these spares go, 
+            so long as sender and receiver use the same system. <br><br>
+            To encipher, a letter on the top row is simply replaced by the number labelling its column. Letters on the other 
+            rows are replaced by their row number, then column number. (Practical Cryptography)
+        </p>
+        <p>
+            Enter the text that you wish to perform the Straddle Checkerboard Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "apple"><br>
+            Encryption Key Alphabet: <input id = "cipherKey" type = "text" name = "key" value = "fkmcpdyehbigqrosazlutjnwvx"><br>
+            Encryption Key Digit 1: <input id = "cipherDigit1" type = "text" name = "key" value = "3"><br>
+            Encryption Key Digit 2: <input id = "cipherDigit2" type = "text" name = "key" value = "7"><br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myStraddleCheckerboardCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/20StraddleCheckerboard.js" type="text/javascript"></script>
+    </body>
+</html>

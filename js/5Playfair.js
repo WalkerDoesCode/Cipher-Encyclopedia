@@ -23,9 +23,14 @@ function myPlayfairCipher() {
         text += "Encrypt plaintext: ";
     };
 
+    tString = tString.toLowerCase();
+
     text += tString + "<br><br>";
     var akString = keyWithAlphabet(kString, "abcdefghiklmnopqrstuvwxyz");
     text += "Key = " + kString + " (" + akString + ")<br><br>";
+    text += stringify2DArray(make2DArrayFromString(akString, 5, 5)) + "<br><br>";
+
+    tString = convertLettersInString(tString, "j", "i");
 
     if(cipherOperation == "1") {
         text += "Corresponding plaintext: ";

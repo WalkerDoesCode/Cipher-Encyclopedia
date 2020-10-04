@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/1Caesar.css" type="text/css">
+        <title>Cipher 21: Skip / K3</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #21: Skip / K3 Cipher <br>
+            if you are given the encrypted text, you start at a given letter and then count N letters (wrapping around 
+            from the end to the beginning) forward to the next letter. (Rumkin)
+        </p>
+        <p>
+            Enter the text that you wish to perform the Skip / K3 Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "apple"><br>
+            Encryption Key N (Bypass first N letters): <input id = "cipherKeyBypass" type = "text" name = "key" value = "0"><br>
+            Encryption Key S (Skip every S letters for decoding): <input id = "cipherKeySkip" type = "text" name = "key" value = "1"><br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="mySkipK3Cipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/21SkipK3.js" type="text/javascript"></script>
+    </body>
+</html>

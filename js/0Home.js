@@ -694,3 +694,13 @@ function make2DArrayFromString(tString, r, c) {
     }
     return grid;
 }
+
+// Appends the first b letters of tString to the end of the remaining letters.
+// Example: byPassString("apple", 2) = "pleap"
+function byPassString(tString, b) {
+    var l = tString.length;
+    b = modGreater(b, 0, l);
+    var text = tString.substring(b, l);
+    text += tString.substring(0, b);
+    return text;
+}

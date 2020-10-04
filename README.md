@@ -20,3 +20,4 @@ Cipher #17: The Fractionated Morse Cipher (Test at CodePen: https://codepen.io/W
 Cipher #18: The Polybius Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/oNxrdej)  
 Cipher #19: The Porta Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/OJNeZwO)  
 Cipher #20: The Straddle Checkerboard Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/VwaoLMM)  
+Cipher #21: The Skip / K3 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ZEWgJPP)  

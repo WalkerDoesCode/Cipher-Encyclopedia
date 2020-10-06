@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/23Trithemius.css" type="text/css">
+        <title>Cipher 23: Trithemius</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #23: Trithemius Cipher <br>
+            The Trithemius cipher was one of many polyalphabetic ciphers designed to be easy in frequent use. Instead of using 
+            random combinations of alphabet letters, Trithemius proposed using a special table. After some time the table was 
+            named tabula recta:<br><br>
+        </p>
+        <img src = "../img/TrithemiusGrid.png" alt = "Trithemius Tabula Recta">
+        <p>
+            The first row contains all alphabet letters in the original order. Next rows also contain all letters but in each 
+            row they are shifted to the left by one position. The table has 26 rows and 26 columns (there are 26 letters in 
+            the Latin alphabet).<br><br>
+            During encryption, subsequent plaintext letters are replaced by relevant letters from subsequent rows of the table. 
+            After using the last row, one should move back to the first row. It means that all plaintext letters are increased by 
+            number of positions determined by the actual row. Therefore the first letter is encrypted without shift, the second 
+            letter with the shift determined by the second row (so by one position), the third letter with the shift determined by 
+            the third row (so by two positions) and so on. (Crypto-IT)
+        </p>
+        <p>
+            Enter the text that you wish to perform the Trithemius Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "machine"><br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myTrithemiusCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/23Trithemius.js" type="text/javascript"></script>
+    </body>
+</html>

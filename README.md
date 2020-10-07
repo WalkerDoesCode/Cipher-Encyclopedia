@@ -23,3 +23,4 @@ Cipher #20: The Straddle Checkerboard Cipher (Test at CodePen: https://codepen.i
 Cipher #21: The Skip / K3 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ZEWgJPP)  
 Cipher #22: The Letter Number Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/RwaXEJR)  
 Cipher #23: The Trithemius Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/PozYmZK)  
+Cipher #24: The Nihilist Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/jOrOOpP)  

@@ -704,3 +704,17 @@ function byPassString(tString, b) {
     text += tString.substring(0, b);
     return text;
 }
+
+// Returns the row and column number of an element in a 2D Array.
+function indexOf2DArray(mat, v) {
+    var r = mat.length, c = mat[0].length;
+    var i,j;
+    for(i = 0; i<r; i++) {
+        for(j = 0; j<c; j++) {
+            if(mat[i][j] == v) {
+                return [i,j];
+            }
+        }
+    }
+    return [-1,-1];
+}

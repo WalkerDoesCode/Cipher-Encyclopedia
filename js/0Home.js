@@ -157,10 +157,11 @@ function valLetters(lString) {
 
 // valLetter returns the Vigenere order of a given character in a string
 // i.e. a = 0, b = 1, ... z = 25 (Not case sensitive)
-function valLetter(lString, i=0) {
+function valLetter(lString, i = 0, alphabet = "abcdefghijklmnopqrstuvwxyz") {
+    alphabet = alphabet.toLowerCase();
     var char = lString.charAt(i);
     char = char.toLowerCase();
-    return char.charCodeAt() - 97;
+    return alphabet.indexOf(char);
 }
 
 // rankLetters returns a ranking of the indices from 0 to l-1 based on the alphabetical order of
@@ -717,4 +718,19 @@ function indexOf2DArray(mat, v) {
         }
     }
     return [-1,-1];
+}
+
+// substituteAlphabets(text,newA,oldA) replaces instances of letters from oldA in text with the corresponding letters in newA
+function substituteAlphabets(plain, newA, oldA = getAlphabet()) {
+    plain = plain.toLowerCase();
+    oldA = oldA.toLowerCase();
+    newA = newA.toLowerCase();
+    var text = "";
+    var l = plain.length;
+    var val, i;
+    for(i = 0; i<l; i++) {
+        val = valLetter(plain, i, oldA);
+        text += newA.charAt(val);
+    }
+    return text;
 }

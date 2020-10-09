@@ -7,10 +7,13 @@ function mySimpleSubstitutionCipher() {
 
     var alphabet = "abcdefghijklmnopqrstuvwxyz", char;
     var text = "";
-    if(kString.length!=26) {
-        text = "ERROR: Encryption Alphabet does not have exactly 26 characters.";
+    if(kString.length>26) {
+        text = "ERROR: Encryption Alphabet has more than 26 characters.";
         document.getElementById("demo").innerHTML = text;
     }
+
+    kString = keyWithAlphabet(kString, getAlphabet());
+
     for(i = 0; i<26; i++) {
         char = alphabet.charAt(i);
         if(!kString.includes(char)) {
@@ -52,25 +55,12 @@ function mySimpleSubstitutionCipher() {
 
 function decryptSimpleSubstitution(cipherText, key) {
     cipherText = cipherText.toLowerCase();
-    var text = "";
     key = key.toLowerCase();
-    var alphabet = "abcdefghijklmnopqrstuvwxyz", char, index;
-    for(var i = 0; i<cipherText.length; i++) {
-        char = cipherText.charAt(i);
-        index = key.indexOf(char);
-        text += alphabet.charAt(index);
-    }
-    return text;
+    return substituteAlphabets(cipherText, getAlphabet(), key);
 }
 
 function encryptSimpleSubstitution(plainText, key) {
     plainText = plainText.toLowerCase();
-    var text = "";
     key = key.toLowerCase();
-    var val, i;
-    for(i = 0; i<plainText.length; i++) {
-        val = valLetter(plainText.charAt(i));
-        text += key.charAt(val);
-    }
-    return text;
+    return substituteAlphabets(plainText, key);
 }

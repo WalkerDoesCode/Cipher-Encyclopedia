@@ -27,3 +27,4 @@ Cipher #24: The Nihilist Cipher (Test at CodePen: https://codepen.io/WalkerDoesC
 Cipher #25: The ROT13 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/VwjYeoo)  
 Cipher #26: The Atbash Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/pobvypZ)  
 Cipher #27: The Two Square Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/oNLXYvJ)  
+Cipher #28: The Scytale Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/yLJNpdM)  

@@ -101,25 +101,25 @@ function myFourSquareCipher() {
         tempValue = fourSquareAlphabet.charAt(i);
         if(!contains2DArray(tlMat, tempValue)) {
             text = "ERROR: Top Left Encryption Grid does not contain the letter \'" + tempValue + "\'<br>";
-            text += stringify2DArray(kMat);
+            text += stringify2DArray(tlMat);
             document.getElementById("demo").innerHTML = text;
             return;
         }
         if(!contains2DArray(trMat, tempValue)) {
             text = "ERROR: Top Right Encryption Grid does not contain the letter \'" + tempValue + "\'<br>";
-            text += stringify2DArray(kMat);
+            text += stringify2DArray(trMat);
             document.getElementById("demo").innerHTML = text;
             return;
         }
         if(!contains2DArray(blMat, tempValue)) {
             text = "ERROR: Bottom Left Encryption Grid does not contain the letter \'" + tempValue + "\'<br>";
-            text += stringify2DArray(kMat);
+            text += stringify2DArray(blMat);
             document.getElementById("demo").innerHTML = text;
             return;
         }
         if(!contains2DArray(brMat, tempValue)) {
             text = "ERROR: Bottom Right Encryption Grid does not contain the letter \'" + tempValue + "\'<br>";
-            text += stringify2DArray(kMat);
+            text += stringify2DArray(brMat);
             document.getElementById("demo").innerHTML = text;
             return;
         }

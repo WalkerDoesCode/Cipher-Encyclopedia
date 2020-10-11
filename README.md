@@ -26,3 +26,4 @@ Cipher #23: The Trithemius Cipher (Test at CodePen: https://codepen.io/WalkerDoe
 Cipher #24: The Nihilist Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/jOrOOpP)  
 Cipher #25: The ROT13 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/VwjYeoo)  
 Cipher #26: The Atbash Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/pobvypZ)  
+Cipher #27: The Two Square Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/oNLXYvJ)  

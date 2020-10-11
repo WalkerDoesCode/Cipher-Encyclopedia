@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/27TwoSquare.css" type="text/css">
+        <title>Cipher 27: 2 Square</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #27: Two Square Cipher <br>
+            The two-square cipher is a polygraphic substitution cipher. The original plaintext is divided into 
+            groups of a few letters. Then, each group is replaced by another previously determined group of 
+            characters. The two-square cipher operates on groups of the size of two letters.<br><br>
+            Before encryption one should prepare two tables, using words (or longer phrases) that are used as secret 
+            keys. Both tables have dimensions of 5 by 5 letters and contain 25 letters of the Latin alphabet. The Latin 
+            alphabet has 26 letters, so to create the table, one of the rare letters should be skipped (for example, x 
+            or q), or the letters i and j should be treated as one letter as shown below:<br><br>
+        </p>
+        <img src = "../img/TwoSquareEncryptionKey.png" alt = "Crypto-It Example Two Square Key">
+        <p>
+            <br>
+            The tables should be placed side by side in such a way that lines of rows (or lines of columns) are aligned. 
+            To perform encryption, as a next step, one should divide the plaintext into pairs. Each pair should consist 
+            of two consecutive letters. If necessary, a rare letter may be appended to the original text (for example X 
+            or Q). Then, one should find the first letter of each pair in the first table, and the second letter in the second 
+            table. Then, one should create a rectangle that covers over two tables and has corners in cells determined 
+            by the two letters. To encrypt those two letters, they have to be replaced by another two letters, that 
+            are determined by two other corners of the rectangle. The same steps should be repeated for all plaintext 
+            pairs. All letters should be replaced by letters chosen based on the tables.<br><br>
+            If both letters in the currently encrypting pair are located in the same row (or, respectively, in the same 
+            column), then a new pair should the same as the original one. It must by highlighted that one of the 
+            weaknesses of the two-square cipher is that such a situation takes place for twenty percent of all 
+            possible pairs of letters. (Crypto-It)
+        </p>
+        <p>
+            Enter the text that you wish to perform the Two Square Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "apple"><br>
+        </form>
+        <button onclick="generateTwoSquareGrids()">Create Two Square Grids</button><br><br>
+        <form id="frm2" action="/action_page.php">
+            <div id = "gridLabel"></div>
+            <div id = "gridContainer" class = "gridCollection"></div>
+            Decrypt or Encrypt: (Doesn't matter for this cipher)<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myTwoSquareCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/27TwoSquare.js" type="text/javascript"></script>
+    </body>
+</html>

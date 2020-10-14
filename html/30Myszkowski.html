@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/30Myszkowski.css" type="text/css">
+        <title>Cipher 30: Myszkowski</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #30: Myszkowski Transposition Cipher <br>
+            The Myszkowski Transposition Cipher is a variant of Columnar Transposition in the way it deals with 
+            recurring letters in the keyword. It was proposed by Émile Victor Théodore Myszkowski in 1902. The 
+            same methodology as for Columnar Transposition is used, where the plaintext is written out in rows 
+            under the keyword. The only difference is that when there are repeated letters in the keyword, rather 
+            than number them from left to right, you give all the same letters the same number. You then read 
+            across columns which have the same number in the keyword. (Crypto Corner)
+        </p>
+        <p>
+            Enter the text that you wish to perform the Myszkowski Transposition Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            <!-- thetomatoisaplantinthenightshadefamily -->
+            <!-- tinesaeoahtfhmtalitihaeiytoasptnnghdml -->
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "thetomatoisaplantinthenightshadefamily"><br>
+            Encryption Key Word: <input id = "cipherKey" type = "text" name = "key" value = "tomato"><br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myMyszkowskiCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/30Myszkowski.js" type="text/javascript"></script>
+    </body>
+</html>

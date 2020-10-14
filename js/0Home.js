@@ -734,3 +734,69 @@ function substituteAlphabets(plain, newA, oldA = getAlphabet()) {
     }
     return text;
 }
+
+// multiListSortIndicesForward(list, order) sorts the values in list based on the corresponding values in order. (Used in Myszkowski)
+// For example, multiListSortIndicesForward(['a','b','c','d','e'], [2, 0, 1, 1, 2]) returns ['b', 'c', 'd', 'a', 'e'].
+function multiListSortIndicesForward(list, order) {
+    var l = list.length;
+    if(l!=order.length) {
+        return list;
+    }
+    var i;
+    var indices = [];
+    for(i = 0; i<l; i++) {
+        indices.push(i);
+    }
+    indices.sort((a,b) => order[a]-order[b]);
+    var final = [];
+    for(i = 0; i<l; i++) {
+        final.push(list[indices[i]]);
+    }
+    return final;
+}
+
+// multiListSortIndicesInverse(list, order) sorts the values in list based on the corresponding values in order. (Used in Myszkowski)
+// For example, multiListSortIndicesInverse(['b','c','d','a','e'], [2, 0, 1, 1, 2]) returns ['a','b','c','d','e'].
+function multiListSortIndicesInverse(list, order) {
+    var l = list.length;
+    if(l!=order.length) {
+        return list;
+    }
+    var i;
+    var indices = [];
+    for(i = 0; i<l; i++) {
+        indices.push(i);
+    }
+    indices.sort((a,b) => order[a]-order[b]);
+    var final = [];
+    for(i = 0; i<l; i++) {
+        final.push(list[indices.indexOf(i)]);
+    }
+    return final;
+}
+
+// numValueInArray(v, array, end) returns the number of elements with value v in array before the index end
+function numValueInArray(v, array, end = array.length) {
+    var i = 0;
+    var total = 0;
+    while(i<end) {
+        if(array[i]==v) {
+            total+=1;
+        }
+        i+=1;
+    }
+    return total;
+}
+
+// numRangeInArray(l, r, array, end) returns the number of elements in the range [l,r) in array before the index end
+function numRangeInArray(l, r, array, end = array.length) {
+    var i = 0;
+    var total = 0;
+    while(i<end) {
+        if(l<=array[i] && array[i]<r) {
+            total+=1;
+        }
+        i+=1;
+    }
+    return total;
+}

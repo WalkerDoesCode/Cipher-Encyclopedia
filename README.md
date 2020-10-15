@@ -30,3 +30,4 @@ Cipher #27: The Two Square Cipher (Test at CodePen: https://codepen.io/WalkerDoe
 Cipher #28: The Scytale Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/yLJNpdM)  
 Cipher #29: The Permutation Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ZEOGrOv)  
 Cipher #30: The Myszkowski Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/JjKYzEg)  
+Cipher #31: The Gronsfeld Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/YzWwEjq)  

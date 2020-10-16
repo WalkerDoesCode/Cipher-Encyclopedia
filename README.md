@@ -31,3 +31,4 @@ Cipher #28: The Scytale Cipher (Test at CodePen: https://codepen.io/WalkerDoesCo
 Cipher #29: The Permutation Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ZEOGrOv)  
 Cipher #30: The Myszkowski Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/JjKYzEg)  
 Cipher #31: The Gronsfeld Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/YzWwEjq)  
+Cipher #32: The Morse Code Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/YzWqyQz)  

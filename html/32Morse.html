@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/32Morse.css" type="text/css">
+        <title>Cipher 32: Morse</title>
+    </head>
+    <body> 
+        <a href="../index.html">Homepage</a><br>
+        <p>
+            Cipher #32: Morse Code Cipher <br>
+            Morse Code, created by Samuel Morse, was designed to transmit letters across telegrams. When encrypting, only letters and numbers 
+            will be encoded and the rest will be treated like spaces. When decrypting, only periods and hyphens will 
+            be decoded and the rest will be treated like spaces. This web page uses International Morse Code with some additional 
+            enhancements, but without support for foreign characters. It also is geared to help you decode Morse Code 
+            snippets you find with the Reverse (flips the text) and Swap (exchanges periods and hyphens) links. (Rumkin)
+        </p>
+        <img src = "../img/MorseCodeChart.png" alt = "Morse Code Chart">
+        <p>
+            Enter the text that you wish to perform the Morse Code Cipher on.
+        </p>
+        <form id="frm1" action="/action_page.php">
+            Ciphertext / Plaintext: <input id = "cipherText" type = "text" name = "total" value = "apple"><br>
+            Decrypt or Encrypt:<br>
+            <input type = "radio" id = "decryptRadio" name = "cipherOperation" value = "1" checked>
+            <label for = "decryptRadio">Decrypt</label><br>
+            <input type = "radio" id = "encryptRadio" name = "cipherOperation" value = "2">
+            <label for = "encryptRadio">Encrypt</label><br>
+        </form>
+        <p>
+            Click "Run Cipher" to display the corresponding plaintext / ciphertext for your input.
+        </p>
+        <button onclick="myMorseCipher()">Run Cipher</button>
+        
+        <div id = "results"><p id = "demo">Plaintext / Ciphertext</p></div>
+        <script src="../js/0Home.js" type="text/javascript"></script>
+        <script src="../js/32Morse.js" type="text/javascript"></script>
+    </body>
+</html>

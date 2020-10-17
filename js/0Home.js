@@ -800,3 +800,14 @@ function numRangeInArray(l, r, array, end = array.length) {
     }
     return total;
 }
+
+// indexCharString(str, char, start) returns the first index at or after start in string with the letter char
+function indexCharString(str, char, start = 0) {
+    var i, l = str.length;
+    for(i = start; i<l; i++) {
+        if(str.charAt(i) == char) {
+            return i;
+        }
+    }
+    return -1;
+}

@@ -34,3 +34,4 @@ Cipher #31: The Gronsfeld Cipher (Test at CodePen: https://codepen.io/WalkerDoes
 Cipher #32: The Morse Code Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/YzWqyQz)  
 Cipher #33: The ASCII Encryption Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/YzWqvbB)  
 Cipher #34: The Plaintext to Hexadecimal Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/vYKKBjz)  
+Cipher #35: The Plaintext to Binary Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/GRqqvxE)  

@@ -35,3 +35,5 @@ Cipher #32: The Morse Code Cipher (Test at CodePen: https://codepen.io/WalkerDoe
 Cipher #33: The ASCII Encryption Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/YzWqvbB)  
 Cipher #34: The Plaintext to Hexadecimal Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/vYKKBjz)  
 Cipher #35: The Plaintext to Binary Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/GRqqvxE)  
+Cipher #36: The Number Base Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/oNLzgQx)  
+

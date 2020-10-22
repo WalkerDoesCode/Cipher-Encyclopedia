@@ -821,3 +821,16 @@ function reverseString(string) {
     }
     return text;
 }
+
+// rearrangeBasedOnRank(string, rank) rearranges the characters in rank based on the ranking in rank.
+function rearrangeBasedOnRank(string, rank) {
+    var text = "";
+    if(string.length!=rank.length) {
+        return string;
+    }
+    var l = rank.length, i;
+    for(i = 0; i<l; i++) {
+        text += string.charAt(rank[i]);
+    }
+    return text;
+}

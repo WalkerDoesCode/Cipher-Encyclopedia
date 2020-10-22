@@ -811,3 +811,13 @@ function indexCharString(str, char, start = 0) {
     }
     return -1;
 }
+
+// reverseString(string) reverses the characters in a string and returns the result.
+function reverseString(string) {
+    var text = "";
+    var l = string.length, i;
+    for(i = l-1; i>=0; i--) {
+        text += string.charAt(i);
+    }
+    return text;
+}

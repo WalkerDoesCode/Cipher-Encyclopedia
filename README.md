@@ -37,3 +37,4 @@ Cipher #34: The Plaintext to Hexadecimal Cipher (Test at CodePen: https://codepe
 Cipher #35: The Plaintext to Binary Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/GRqqvxE)  
 Cipher #36: The Number Base Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/oNLzgQx)  
 Cipher #37: The Transpose Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYZRgvz)  
+Cipher #38: The Alphabet Disorder Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/XWKNRqb)  

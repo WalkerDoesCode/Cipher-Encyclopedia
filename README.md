@@ -40,3 +40,4 @@ Cipher #37: The Transpose Cipher (Test at CodePen: https://codepen.io/WalkerDoes
 Cipher #38: The Alphabet Disorder Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/XWKNRqb)  
 Cipher #39: The Transposition Period Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/xxORmrQ)  
 Cipher #40: The Morbit Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/OJXWQKZ)  
+Cipher #41: The Prime Number Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/KKMaLZB)  

@@ -44,3 +44,4 @@ Cipher #41: The Prime Number Cipher (Test at CodePen: https://codepen.io/WalkerD
 Cipher #42: The Chaocipher Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/pobeeog)  
 Cipher #43: The Alberti Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/zYBZXMR)  
 Cipher #44: The Alphabetical Rank Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/abZVBbZ)  
+Cipher #45: The Autoclave Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/eYzVKbm)  

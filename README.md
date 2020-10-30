@@ -45,3 +45,4 @@ Cipher #42: The Chaocipher Cipher (Test at CodePen: https://codepen.io/WalkerDoe
 Cipher #43: The Alberti Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/zYBZXMR)  
 Cipher #44: The Alphabetical Rank Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/abZVBbZ)  
 Cipher #45: The Autoclave Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/eYzVKbm)  
+Cipher #46: The Phillips Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWrYddm)  

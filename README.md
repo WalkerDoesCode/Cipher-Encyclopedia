@@ -48,3 +48,4 @@ Cipher #45: The Autoclave Cipher (Test at CodePen: https://codepen.io/WalkerDoes
 Cipher #46: The Phillips Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWrYddm)  
 Cipher #47: The Cardan Grille Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/MWeVZxV)  
 Cipher #48: The XOR Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/eYzrJjy)  
+Cipher #49: The Progressive Caesar Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/mdELXpr)  

@@ -49,3 +49,4 @@ Cipher #46: The Phillips Cipher (Test at CodePen: https://codepen.io/WalkerDoesC
 Cipher #47: The Cardan Grille Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/MWeVZxV)  
 Cipher #48: The XOR Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/eYzrJjy)  
 Cipher #49: The Progressive Caesar Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/mdELXpr)  
+Cipher #50: The Redefence Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/vYKrLLa)  

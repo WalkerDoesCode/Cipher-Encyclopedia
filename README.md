@@ -50,3 +50,4 @@ Cipher #47: The Cardan Grille Cipher (Test at CodePen: https://codepen.io/Walker
 Cipher #48: The XOR Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/eYzrJjy)  
 Cipher #49: The Progressive Caesar Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/mdELXpr)  
 Cipher #50: The Redefence Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/vYKrLLa)  
+Cipher #51: The Ubchi Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/XWKYyRv)  

@@ -52,3 +52,4 @@ Cipher #49: The Progressive Caesar Cipher (Test at CodePen: https://codepen.io/W
 Cipher #50: The Redefence Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/vYKrLLa)  
 Cipher #51: The Ubchi Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/XWKYyRv)  
 Cipher #52: The Prime Multiplication Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/JjKBNmz)  
+Cipher #53: The ROT5 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNMBLb)  

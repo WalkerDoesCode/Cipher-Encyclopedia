@@ -53,3 +53,4 @@ Cipher #50: The Redefence Cipher (Test at CodePen: https://codepen.io/WalkerDoes
 Cipher #51: The Ubchi Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/XWKYyRv)  
 Cipher #52: The Prime Multiplication Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/JjKBNmz)  
 Cipher #53: The ROT5 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNMBLb)  
+Cipher #54: The Consonant Vowel Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/dyXqdLL)  

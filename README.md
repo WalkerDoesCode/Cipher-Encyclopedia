@@ -54,3 +54,4 @@ Cipher #51: The Ubchi Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode
 Cipher #52: The Prime Multiplication Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/JjKBNmz)  
 Cipher #53: The ROT5 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNMBLb)  
 Cipher #54: The Consonant Vowel Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/dyXqdLL)  
+Cipher #55: The Caesar Box Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNMGpK)  

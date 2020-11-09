@@ -55,3 +55,4 @@ Cipher #52: The Prime Multiplication Cipher (Test at CodePen: https://codepen.io
 Cipher #53: The ROT5 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNMBLb)  
 Cipher #54: The Consonant Vowel Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/dyXqdLL)  
 Cipher #55: The Caesar Box Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNMGpK)  
+Cipher #56: The Indienne Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNJrKR)  

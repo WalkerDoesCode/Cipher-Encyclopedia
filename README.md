@@ -58,3 +58,4 @@ Cipher #55: The Caesar Box Cipher (Test at CodePen: https://codepen.io/WalkerDoe
 Cipher #56: The Indienne Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNJrKR)  
 Cipher #57: The Rozier Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNJexZ)  
 Cipher #58: The Malespin Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/jOrQKbR)  
+Cipher #59: The Reverse Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/jOrXMwz)  

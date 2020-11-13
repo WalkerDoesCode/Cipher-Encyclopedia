@@ -59,3 +59,4 @@ Cipher #56: The Indienne Cipher (Test at CodePen: https://codepen.io/WalkerDoesC
 Cipher #57: The Rozier Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNJexZ)  
 Cipher #58: The Malespin Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/jOrQKbR)  
 Cipher #59: The Reverse Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/jOrXMwz)  
+Cipher #60: The Gold Bug Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/BazvEgJ)  

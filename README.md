@@ -61,3 +61,4 @@ Cipher #58: The Malespin Cipher (Test at CodePen: https://codepen.io/WalkerDoesC
 Cipher #59: The Reverse Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/jOrXMwz)  
 Cipher #60: The Gold Bug Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/BazvEgJ)  
 Cipher #61: The T9 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYZqzyZ)  
+Cipher #62: The Bazeries Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNggdE)  

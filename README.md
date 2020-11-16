@@ -62,3 +62,4 @@ Cipher #59: The Reverse Cipher (Test at CodePen: https://codepen.io/WalkerDoesCo
 Cipher #60: The Gold Bug Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/BazvEgJ)  
 Cipher #61: The T9 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYZqzyZ)  
 Cipher #62: The Bazeries Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNggdE)  
+Cipher #63: The Tap Code Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWrJrPo)  

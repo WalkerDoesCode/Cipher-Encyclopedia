@@ -64,3 +64,4 @@ Cipher #61: The T9 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/fu
 Cipher #62: The Bazeries Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBNggdE)  
 Cipher #63: The Tap Code Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWrJrPo)  
 Cipher #64: The Wabun Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/RwRdvqg)  
+Cipher #65: The Word Substitution Ciphher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/MWeRpyb)  

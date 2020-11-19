@@ -65,3 +65,4 @@ Cipher #62: The Bazeries Cipher (Test at CodePen: https://codepen.io/WalkerDoesC
 Cipher #63: The Tap Code Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWrJrPo)  
 Cipher #64: The Wabun Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/RwRdvqg)  
 Cipher #65: The Word Substitution Ciphher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/MWeRpyb)  
+Cipher #66: The Hodor Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/gOMJPGJ)  

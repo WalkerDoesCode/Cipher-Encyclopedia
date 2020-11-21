@@ -68,3 +68,4 @@ Cipher #65: The Word Substitution Ciphher (Test at CodePen: https://codepen.io/W
 Cipher #66: The Hodor Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/gOMJPGJ)  
 Cipher #67: The Keyboard Coordinates Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/Pozvarm)  
 Cipher #68: The Keyboard Shift Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYZKLPP)  
+Cipher #69: The Keyboard Change Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/wvWLjbw)  

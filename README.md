@@ -71,3 +71,4 @@ Cipher #68: The Keyboard Shift Cipher (Test at CodePen: https://codepen.io/Walke
 Cipher #69: The Keyboard Change Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/wvWLjbw)  
 Cipher #70: The Wolseley Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/pobXqom)  
 Cipher #71: The Music Notes Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/MWeNLpb)  
+Cipher #72: The Trithemius Ave Maria Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/abmopPg)  

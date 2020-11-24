@@ -70,3 +70,4 @@ Cipher #67: The Keyboard Coordinates Cipher (Test at CodePen: https://codepen.io
 Cipher #68: The Keyboard Shift Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYZKLPP)  
 Cipher #69: The Keyboard Change Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/wvWLjbw)  
 Cipher #70: The Wolseley Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/pobXqom)  
+Cipher #71: The Music Notes Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/MWeNLpb)  

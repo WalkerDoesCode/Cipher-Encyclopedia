@@ -73,3 +73,4 @@ Cipher #70: The Wolseley Cipher (Test at CodePen: https://codepen.io/WalkerDoesC
 Cipher #71: The Music Notes Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/MWeNLpb)  
 Cipher #72: The Trithemius Ave Maria Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/abmopPg)  
 Cipher #73: The Book Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/KKgKwwe)  
+Cipher #74: The Multitap Phone Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/VwKwxme)  

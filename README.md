@@ -74,3 +74,4 @@ Cipher #71: The Music Notes Cipher (Test at CodePen: https://codepen.io/WalkerDo
 Cipher #72: The Trithemius Ave Maria Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/abmopPg)  
 Cipher #73: The Book Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/KKgKwwe)  
 Cipher #74: The Multitap Phone Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/VwKwxme)  
+Cipher #75: The ALT Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYREVOj)  

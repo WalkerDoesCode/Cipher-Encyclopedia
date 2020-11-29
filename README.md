@@ -75,3 +75,4 @@ Cipher #72: The Trithemius Ave Maria Cipher (Test at CodePen: https://codepen.io
 Cipher #73: The Book Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/KKgKwwe)  
 Cipher #74: The Multitap Phone Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/VwKwxme)  
 Cipher #75: The ALT Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYREVOj)  
+Cipher #76: The Acéré Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYREOXq)  

@@ -76,3 +76,4 @@ Cipher #73: The Book Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/
 Cipher #74: The Multitap Phone Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/VwKwxme)  
 Cipher #75: The ALT Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYREVOj)  
 Cipher #76: The Acéré Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYREOXq)  
+Cipher #77: The Periodic Table Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/abmzEzP)  

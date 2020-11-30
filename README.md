@@ -78,3 +78,4 @@ Cipher #75: The ALT Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/f
 Cipher #76: The Acéré Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/LYREOXq)  
 Cipher #77: The Periodic Table Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/abmzEzP)  
 Cipher #78: The Pollux Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/vYXEwme)  
+Cipher #79: The Three Squares Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/BaLyevv)  

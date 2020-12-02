@@ -80,3 +80,4 @@ Cipher #77: The Periodic Table Cipher (Test at CodePen: https://codepen.io/Walke
 Cipher #78: The Pollux Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/vYXEwme)  
 Cipher #79: The Three Squares Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/BaLyevv)  
 Cipher #80: The Letters Bars Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBadobP)  
+Cipher #81: The Base 26 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/wvzKWQw)  

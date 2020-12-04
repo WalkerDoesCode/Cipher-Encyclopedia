@@ -82,3 +82,4 @@ Cipher #79: The Three Squares Cipher (Test at CodePen: https://codepen.io/Walker
 Cipher #80: The Letters Bars Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBadobP)  
 Cipher #81: The Base 26 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/wvzKWQw)  
 Cipher #82: The Base 36 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/abmvmoY)  
+Cipher #83: The Digrafid Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/GRjoyJz)  

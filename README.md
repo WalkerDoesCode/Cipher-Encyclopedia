@@ -84,3 +84,4 @@ Cipher #81: The Base 26 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCo
 Cipher #82: The Base 36 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/abmvmoY)  
 Cipher #83: The Digrafid Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/GRjoyJz)  
 Cipher #84: The Letters Positions Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/RwGrdey)  
+Cipher #85: The Collon Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/yLaOdzw)  

@@ -86,3 +86,4 @@ Cipher #83: The Digrafid Cipher (Test at CodePen: https://codepen.io/WalkerDoesC
 Cipher #84: The Letters Positions Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/RwGrdey)  
 Cipher #85: The Collon Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/yLaOdzw)  
 Cipher #86: The Jefferson Wheel Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/XWjKEjQ)  
+Cipher #87: The Vernam Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/zYKKqjj)  

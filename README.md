@@ -87,3 +87,4 @@ Cipher #84: The Letters Positions Cipher (Test at CodePen: https://codepen.io/Wa
 Cipher #85: The Collon Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/yLaOdzw)  
 Cipher #86: The Jefferson Wheel Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/XWjKEjQ)  
 Cipher #87: The Vernam Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/zYKKqjj)  
+Cipher #88: The Vigenere Multiplicative Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/MWjjLdO)  

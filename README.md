@@ -88,3 +88,4 @@ Cipher #85: The Collon Cipher (Test at CodePen: https://codepen.io/WalkerDoesCod
 Cipher #86: The Jefferson Wheel Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/XWjKEjQ)  
 Cipher #87: The Vernam Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/zYKKqjj)  
 Cipher #88: The Vigenere Multiplicative Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/MWjjLdO)  
+Cipher #89: The Modulo Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/JjRbrWM)  

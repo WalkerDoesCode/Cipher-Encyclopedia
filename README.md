@@ -90,3 +90,4 @@ Cipher #87: The Vernam Cipher (Test at CodePen: https://codepen.io/WalkerDoesCod
 Cipher #88: The Vigenere Multiplicative Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/MWjjLdO)  
 Cipher #89: The Modulo Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/JjRbrWM)  
 Cipher #90: The Nomenclator Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWRbQdM)  
+Cipher #91: The Homophonic Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/oNzBWzG)  

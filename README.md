@@ -92,3 +92,4 @@ Cipher #89: The Modulo Cipher (Test at CodePen: https://codepen.io/WalkerDoesCod
 Cipher #90: The Nomenclator Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWRbQdM)  
 Cipher #91: The Homophonic Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/oNzBWzG)  
 Cipher #92: The ROT Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWRdeNw)  
+Cipher #93: The Beaufort Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/KKgWmVY)  

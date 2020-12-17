@@ -94,3 +94,4 @@ Cipher #91: The Homophonic Cipher (Test at CodePen: https://codepen.io/WalkerDoe
 Cipher #92: The ROT Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWRdeNw)  
 Cipher #93: The Beaufort Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/KKgWmVY)  
 Cipher #94: The AMSCO Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/zYKZgmQ)  
+Cipher #95: The Variant Beaufort Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWRjMLa)  

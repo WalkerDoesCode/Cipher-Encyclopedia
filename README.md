@@ -95,3 +95,4 @@ Cipher #92: The ROT Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/f
 Cipher #93: The Beaufort Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/KKgWmVY)  
 Cipher #94: The AMSCO Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/zYKZgmQ)  
 Cipher #95: The Variant Beaufort Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWRjMLa)  
+Cipher #96: The Bellaso Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ExgXKqy)  

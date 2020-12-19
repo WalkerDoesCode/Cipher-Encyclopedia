@@ -96,3 +96,4 @@ Cipher #93: The Beaufort Cipher (Test at CodePen: https://codepen.io/WalkerDoesC
 Cipher #94: The AMSCO Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/zYKZgmQ)  
 Cipher #95: The Variant Beaufort Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/NWRjMLa)  
 Cipher #96: The Bellaso Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ExgXKqy)  
+Cipher #97: The ASCII Shift Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ZEpyjXW)  

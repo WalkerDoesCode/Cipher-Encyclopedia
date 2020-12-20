@@ -98,3 +98,4 @@ Cipher #95: The Variant Beaufort Cipher (Test at CodePen: https://codepen.io/Wal
 Cipher #96: The Bellaso Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ExgXKqy)  
 Cipher #97: The ASCII Shift Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/ZEpyjXW)  
 Cipher #98: The Short Weather WKS Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/mdrMdOx)  
+Cipher #99: The Triliteral Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/eYdEYEJ)  

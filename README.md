@@ -100,3 +100,4 @@ Cipher #97: The ASCII Shift Cipher (Test at CodePen: https://codepen.io/WalkerDo
 Cipher #98: The Short Weather WKS Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/mdrMdOx)  
 Cipher #99: The Triliteral Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/eYdEYEJ)  
 Cipher #100: The Leet Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/BaLdezQ)  
+Cipher #101: The K6 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/vYXeJxV)  

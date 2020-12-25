@@ -102,3 +102,4 @@ Cipher #99: The Triliteral Cipher (Test at CodePen: https://codepen.io/WalkerDoe
 Cipher #100: The Leet Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/BaLdezQ)  
 Cipher #101: The K6 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/vYXeJxV)  
 Cipher #102: The Spiral Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/QWKqPEL)  
+Cipher #103: The K7 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/dypZXER)  

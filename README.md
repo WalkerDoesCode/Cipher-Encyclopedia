@@ -103,3 +103,4 @@ Cipher #100: The Leet Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode
 Cipher #101: The K6 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/vYXeJxV)  
 Cipher #102: The Spiral Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/QWKqPEL)  
 Cipher #103: The K7 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/dypZXER)  
+Cipher #104: The Solitaire Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBaVpmX)  

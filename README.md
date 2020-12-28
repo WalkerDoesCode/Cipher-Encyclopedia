@@ -105,3 +105,4 @@ Cipher #102: The Spiral Cipher (Test at CodePen: https://codepen.io/WalkerDoesCo
 Cipher #103: The K7 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/dypZXER)  
 Cipher #104: The Solitaire Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBaVpmX)  
 Cipher #105: The ROT-47 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/VwKrgyO)  
+Cipher #106: The DTMF Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/poEpgQj)  

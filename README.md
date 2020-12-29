@@ -106,3 +106,4 @@ Cipher #103: The K7 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/f
 Cipher #104: The Solitaire Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/qBaVpmX)  
 Cipher #105: The ROT-47 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/VwKrgyO)  
 Cipher #106: The DTMF Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/poEpgQj)  
+Cipher #107: The ROT1 Cipher (Test at CodePen: https://codepen.io/WalkerDoesCode/full/JjRMZGp)  
